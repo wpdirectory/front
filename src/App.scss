@@ -1,0 +1,24 @@
+/**
+ * App Styles
+ * To import from `node_modules` prefix imports with `~` as below. 
+ */
+
+// Import Dependencies
+@import 'src/assets/scss/dependencies.scss';
+
+// Fonts
+@import 'src/assets/scss/fonts.scss';
+
+// Import Global
+@import 'src/assets/scss/global.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}

@@ -1,0 +1,88 @@
+/**
+ * Typography
+ */
+
+html {
+	font-size: $base-font-size;
+}
+
+body {
+	font-family: $base-font-family;
+  line-height: $base-line-height;
+  font-size: $base-font-size;
+  font-weight: 300;
+  color: $base-font-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $base-font-family;
+  font-weight: 300;
+  color: get-color( brand1 );
+  margin: rem-calc( 0 0 20 0 );
+}
+
+h1 {
+  font-size: rem-calc( 30 );
+
+  @include media( '>tablet' ) {
+    font-size: rem-calc( 40 );
+  }
+}
+
+h2 {
+  font-size: rem-calc( 26 );
+
+  @include media( '>tablet' ) {
+    font-size: rem-calc( 30 );
+  }
+}
+
+h3 {
+  font-size: rem-calc( 22 );
+
+  @include media( '>tablet' ) {
+    font-size: rem-calc( 26 );
+  }
+}
+
+h4 {
+  font-size: rem-calc( 18 );
+
+  @include media( '>tablet' ) {
+    font-size: rem-calc( 20 );
+  }
+}
+
+h5 {
+  font-size: rem-calc( 16 );
+
+  @include media( '>tablet' ) {
+    font-size: rem-calc( 18 );
+  }
+}
+
+h6 {
+  font-size: rem-calc( 16 );
+
+  @include media( '>tablet' ) {
+    font-size: rem-calc( 40 );
+  }
+}
+
+p {
+  margin: rem-calc( 0 0 20 0 );
+  color: get-color( text );
+}
+
+ul, ol {
+  padding: rem-calc( 0 0 0 15 );
+  margin: rem-calc( 0 );
+}
+
+ul {
+
+}
+
+ol {
+    
+}

@@ -1,0 +1,48 @@
+/**
+ * Variables
+ */
+
+/**
+ * Colours
+ */
+$colors: (
+  // Main
+  blue: #0073aa,
+
+  // Secondary
+  text: #666666,
+
+  // Tertiary
+  function: #5CA9AD,
+  success:  #47B800,
+  warning:  #EE8B00,
+  error:    #C03344,
+  inactive: #EAEAEA,
+
+  // Shades
+  white: #ffffff,
+  black: #000000,
+);
+
+// Breakpoints
+// Using `include-media` https://github.com/eduardoboucas/include-media/
+$breakpoints: (
+  mini: 480px,
+  tablet: 768px,
+  desktop-menu: 1070px,
+  laptop: 1024px,
+  desktop: 1200px,
+  wrap-max: 1400px,
+  screen: 1500px,
+);
+
+/**
+ * Typography
+ */
+$base-font-family: 'Roboto', Helvetica, Arial, sans-serif;
+$base-line-height: 1.6;
+$base-font-color: get-color( text );
+$base-font-weight: 300;
+$base-font-size: 16px;
+
+$heading-font-family: 'Roboto', Helvetica, Arial, sans-serif;

@@ -1,0 +1,29 @@
+/**
+ * Global Styles
+ */
+
+html,
+body,
+#root {
+  height: 100%;
+  background-color: #f7f7f7;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: $base-font-family;
+  line-height: $base-line-height;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  color: $base-font-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $base-font-family;
+  color: get-color( brand1 );
+}
