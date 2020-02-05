@@ -2,17 +2,21 @@
  * Global Styles
  */
 
-html,
-body,
-#root {
-  height: 100%;
-  background-color: #f7f7f7;
-}
+// Import Dependencies
+@import 'src/assets/scss/dependencies.scss';
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #f7f7f7;
+
+  @include media( '>desktop' ) {
+    height: 100%;
+  }
 }
 
 body {
@@ -21,9 +25,22 @@ body {
   font-size: $base-font-size;
   font-weight: $base-font-weight;
   color: $base-font-color;
+
+  @include media( '>desktop' ) {
+    height: 100%;
+  }
+}
+
+#app {
+  overflow: hidden;
+
+  @include media( '>desktop' ) {
+    height: 100%;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $base-font-family;
-  color: get-color( brand1 );
+  margin: 0 0 1em 0;
+  color: get-color( blue );
 }

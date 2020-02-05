@@ -14,12 +14,14 @@ function Page({ name, children }) {
   return (
     <div className={classes.filter(Boolean).join(' ')}>
       <>
-        <Header />
         <Navigation />
-        <div className="content">
-          {children}
+        <div className="main">
+          <Header />
+          <div className="content">
+            {children}
+          </div>
+          <Footer />
         </div>
-        <Footer />
       </>
     </div>
   )

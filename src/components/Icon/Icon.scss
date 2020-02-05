@@ -1,0 +1,49 @@
+/**
+ * Icon Component
+ */
+
+// Import Dependencies
+@import 'src/assets/scss/dependencies.scss';
+
+.icon {
+  height: rem-calc( 36 );
+  width: rem-calc( 36 );
+  fill: get-color( text );
+
+  &--light {
+    fill: get-color( interface );
+  }
+
+  &--normal {
+    fill: get-color( text );
+  }
+
+  &--dark {
+    fill: get-color( white );
+  }
+
+  &--xsmall {
+    height: rem-calc( 16 );
+    width: rem-calc( 16 );
+  }
+
+  &--small {
+    height: rem-calc( 26 );
+    width: rem-calc( 26 );
+  }
+
+  &--medium {
+    height: rem-calc( 36 );
+    width: rem-calc( 36 );
+  }
+
+  &--large {
+    height: rem-calc( 46 );
+    width: rem-calc( 46 );
+  }
+
+  &--xlarge {
+    height: rem-calc( 56 );
+    width: rem-calc( 56 );
+  }
+}

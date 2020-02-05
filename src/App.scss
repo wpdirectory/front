@@ -3,6 +3,9 @@
  * To import from `node_modules` prefix imports with `~` as below. 
  */
 
+// Import Normalize.css
+@import '~normalize.css/normalize.css';
+
 // Import Dependencies
 @import 'src/assets/scss/dependencies.scss';
 
@@ -11,14 +14,3 @@
 
 // Import Global
 @import 'src/assets/scss/global.scss';
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-}

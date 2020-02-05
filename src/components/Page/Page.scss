@@ -6,5 +6,26 @@
 @import 'src/assets/scss/dependencies.scss';
 
 .page {
-  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  overflow: hidden;
+  color: get-color( text );
+
+  @include media( '>desktop' ) {
+    height: 100%;
+  }
+
+  .main {
+    flex: 1 0 200px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .content {
+    
+  }
 }
