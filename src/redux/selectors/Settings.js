@@ -6,3 +6,8 @@ export const getNavigationExpanded = createSelector(
   [getSettings],
   state => state.isNavigationExpanded
 )
+
+export const getNavigationOpen = createSelector(
+  [getSettings],
+  state => state.isNavigationOpen
+)
