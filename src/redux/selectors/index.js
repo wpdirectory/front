@@ -1,5 +1,5 @@
 export {
-  getSettings,
-  getNavigationExpanded,
-  getNavigationOpen,
+  settingsAll,
+  settingsNavigationExpanded,
+  settingsNavigationOpen,
 } from './Settings'

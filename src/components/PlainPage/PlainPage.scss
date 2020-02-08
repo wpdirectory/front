@@ -5,13 +5,7 @@
 // Import Dependencies
 @import 'src/assets/scss/dependencies.scss';
 
-.page {
-  min-height: 100vh;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-
+.plain-page {
   overflow: hidden;
   color: get-color( text );
 
@@ -19,16 +13,7 @@
     height: 100%;
   }
 
-  .main {
-    flex: 1 0 200px;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-
   .content {
-    flex: 1 0 rem-calc( 400 );
     padding: rem-calc( 20 20 );
   }
 }

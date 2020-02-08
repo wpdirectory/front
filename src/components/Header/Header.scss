@@ -30,7 +30,7 @@
   }
 
   &__menu {
-    flex: 0 0 rem-calc( 120 );
+    flex: 0 0 rem-calc( 90 );
     cursor: pointer;
 
     @include media( '>desktop' ) {
@@ -50,7 +50,7 @@
     }
   }
   &__user {
-    flex: 0 0 rem-calc( 120 );
+    flex: 0 0 rem-calc( 90 );
     cursor: pointer;
   }
 }

@@ -1,20 +1,20 @@
 import { createReducer } from '@reduxjs/toolkit'
 
 import {
-  toggleNavigationExpanded,
-  toggleNavigationOpen,
+  settingsToggleNavigationExpanded,
+  settingsToggleNavigationOpen,
 } from '../actions'
 
 export const initialState = {
-  isNavigationExpanded: true,
+  isNavigationExpanded: false,
   isNavigationOpen: false,
 }
 
 export default createReducer( initialState, {
-  [toggleNavigationExpanded]: (state, props) => {
+  [settingsToggleNavigationExpanded]: (state, action) => {
     state.isNavigationExpanded = ! state.isNavigationExpanded
   },
-  [toggleNavigationOpen]: (state, props) => {
+  [settingsToggleNavigationOpen]: (state, action) => {
     state.isNavigationOpen = ! state.isNavigationOpen
   },
 })
