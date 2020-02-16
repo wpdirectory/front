@@ -19,7 +19,8 @@ export default createReducer( initialState, {
     return state
   },
   [systemRefreshStatusSuccess]: (state, action) => {
-      state.status     = action.payload.status
+      //state.status     = action.payload.status
+      state.status     = 2
       state.notice     = action.payload.notice
       state.noticeType = action.payload.noticeType
   },

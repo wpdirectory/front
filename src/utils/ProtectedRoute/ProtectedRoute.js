@@ -1,19 +1,20 @@
 import React from 'react'
 import { Route, Redirect } from 'react-router'
-import { connect } from 'react-redux'
+import { useSelector } from 'react-redux'
 import PropTypes from 'prop-types'
 
 import {
-  //getCurrentUserIsAuthed,
+  getCurrentUserIsAuthed,
 } from '../../redux/selectors'
 
 function ProtectedRoute({
   component: Component,
   systemStatus,
   needsAuth = false,
-  isUserAuthed = false,
   ...rest
 }) {
+  const isUserAuthed = useSelector(getCurrentUserIsAuthed)
+
   return (
     <Route {...rest} render={ props =>
         ( systemStatus === 0 ) ? (
@@ -34,16 +35,6 @@ ProtectedRoute.propTypes = {
   component: PropTypes.elementType.isRequired,
   systemStatus: PropTypes.number.isRequired,
   needsAuth: PropTypes.bool,
-  isUserAuthed: PropTypes.bool,
 }
 
-const mapStateToProps = (state, ownProps) => ({
-  //userIsAuthed: getCurrentUserIsAuthed(state),
-})
-
-const mapDispatchToProps = {}
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(ProtectedRoute)
+export default ProtectedRoute

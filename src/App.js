@@ -46,8 +46,6 @@ function App() {
             <Route path="/searches" component={Searches} />
             <Route path="/about" component={About} />
 
-
-
             <Route path="/offline" component={Offline} />
             <Route path="/maintenance" component={Maintenance} />
           </Switch>
